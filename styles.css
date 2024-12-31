@@ -1,0 +1,121 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfcfb; /* Beige clair */
+    color: #333; /* Couleur de texte principale */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #f2ede4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e1dac9; /* Ligne décorative */
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #7a6248; /* Marron clair */
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #7a6248;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #b08c6b; /* Marron clair plus chaud */
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px;
+    flex-direction: row; /* Garde l'image et le texte sur la même ligne */
+    text-align: center; /* Centrer le texte */
+} 
+
+/* alterner l'image à gauche et à droite dans les sections paires */
+.section:nth-child(even) {
+    flex-direction: row-reverse; /* Alterne l'image à droite */
+}
+/* Texte des sections */
+.section .text {
+    flex: 1 1 60%; /* Le texte occupe 60% de la largeur de la section */
+    text-align: justify; /* Justifie le texte à l'intérieur */
+}
+.section:nth-child(even) {
+    flex-direction: row-reverse; /* Alterne l'image à droite ou à gauche */
+}
+/* Image styling */
+.section img {
+    flex: 1 1 30%; /* Réduit l'image à 30% de la largeur de la section */
+    width: 100%;
+    max-width: 250px; /* Réduit la largeur maximale de l'image à 250px */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Douce ombre */
+}
+
+/* Texte des sections */
+.section .text {
+    flex: 1 1 60%; /* 60% pour le texte */
+    text-align: justify; /* Justifie le texte */
+}
+
+.section h2 {
+    color: #7a6248;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f2ede4;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #7a6248;
+    border-top: 3px solid #e1dac9; /* Ligne décorative */
+}
+
+
+/* Si tu veux alterner l'image à gauche et à droite dans les sections paires */
+.section:nth-child(even) {
+    flex-direction: row-reverse; /* Alterne l'image à droite */
+}
+
+
+/* Texte des sections */
+.section .text {
+    flex: 1 1 60%; /* Le texte occupe 60% de la largeur de la section */
+    text-align: justify; /* Justifie le texte à l'intérieur */
+}
+
